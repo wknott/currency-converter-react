@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Container from "./Container";
 import Header from "./Header";
 import Form from "./Form";
+import Result from "./Result";
 
 function App() {
   const exchangeRatesTable = [
@@ -28,7 +29,12 @@ function App() {
         setToCurrency={setToCurrency}
         exchangeRatesTable={exchangeRatesTable}
       />
-
+      <Result
+        amount={amount}
+        fromCurrency={fromCurrency}
+        exchangeRatesTable={exchangeRatesTable}
+        toCurrency={toCurrency}
+      />
     </Container>
   );
 }
