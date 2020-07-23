@@ -2,8 +2,8 @@ import React from "react";
 import "./styles.css";
 
 const Header = () => (
-  <header class="header">
-    <h1 class="header__title">Przelicznik walut</h1>
+  <header className="header">
+    <h1 className="header__title">Przelicznik walut</h1>
   </header>
 )
 
