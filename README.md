@@ -38,7 +38,7 @@ More currencies will be released in the future.
 - HTML
 - CSS (BEM Methodology)
 - JS (ES6+)
-- React.js
+- React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
