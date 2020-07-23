@@ -1,0 +1,12 @@
+.label {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  grid-gap: 10px;
+}
+
+@media (max-width: 600px) {
+  .label {
+    grid-template-columns: 1fr;
+  }
+}

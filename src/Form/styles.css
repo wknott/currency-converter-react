@@ -1,22 +1,9 @@
-.form__labelText {
-  display: inline-block;
-  width: 100%;
-  max-width: 150px;
-}
-
-.form__field,
-.form__select {
-  border: 1px solid #0234d2;
-  padding: 10px;
-  width: 100%;
-  max-width: 300px;
-  border-radius: 5px;
-}
-
 .form__fieldset {
-  border: 1px solid #0234d2;
+  border: 2px solid hsl(226, 98%, 42%);
   border-radius: 5px;
   padding: 20px;
+  box-shadow: 0 0 5px 2px hsl(226, 98%, 52%);
+  background-color: #eee;
 }
 
 .form__legend {
@@ -26,7 +13,9 @@
   padding: 10px;
 }
 
-.form__result {
-  text-align: center;
-  padding: 20px 0 0 0;
+.form__field,
+.form__select {
+  border: 1px solid #0234d2;
+  padding: 10px;
+  border-radius: 5px;
 }

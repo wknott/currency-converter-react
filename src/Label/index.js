@@ -1,9 +1,10 @@
 import React from "react";
+import "./styles.css";
 
 const Label = ({ children, labelText }) => (
   <p>
-    <label className="form__label">
-      <span className="form__labelText">{labelText}:</span>
+    <label className="label">
+      {labelText}:
       {children}
     </label>
   </p>
