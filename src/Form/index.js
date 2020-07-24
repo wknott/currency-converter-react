@@ -1,7 +1,7 @@
 import React from "react";
-import "./styles.css";
 import Label from "../Label";
 import Select from "../Select";
+import "./styles.css";
 
 const Form = ({ amount, setAmount, fromCurrency, setFromCurrency, toCurrency, setToCurrency, exchangeRatesTable }) => (
   <form className="form">
