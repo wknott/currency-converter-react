@@ -8,7 +8,6 @@
 - [Technologies](#technologies)
 - [Available Scripts](#available-scripts)
   - [npm start](#npm-start)
-  - [npm test](#npm-test)
   - [npm run build](#npm-run-build)
   - [npm run eject](#npm-run-eject)
 
@@ -38,7 +37,7 @@ More currencies will be released in the future.
 - HTML
 - CSS (BEM Methodology)
 - JS (ES6+)
-- React.js
+- React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

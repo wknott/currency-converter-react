@@ -1,8 +1,8 @@
 import React from "react";
-import "./styles.css";
 import Label from "../Label";
 import Select from "../Select";
 import { rates } from "../rates";
+import "./styles.css";
 
 const ratesToOptions = () => (
   rates.map(({ code, currency }) => ({
