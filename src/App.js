@@ -13,7 +13,7 @@ function App() {
     { code: "UAH", currency: "hrywna (Ukraina)", mid: 0.1364 },
     { code: "CHF", currency: "frank szwajcarski", mid: 4.10 }
   ];
-  const [amount, setAmount] = useState(100);
+  const [amount, setAmount] = useState("100");
   const [fromCurrency, setFromCurrency] = useState(exchangeRatesTable[0].code);
   const [toCurrency, setToCurrency] = useState(exchangeRatesTable[1].code);
 
