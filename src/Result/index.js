@@ -8,8 +8,8 @@ const Result = ({ amount, fromCurrency, toCurrency }) => (
       (
         +amount *
         (
-          rates.filter(({ code }) => code === fromCurrency)[0].mid /
-          rates.filter(({ code }) => code === toCurrency)[0].mid
+          rates.find(({ code }) => code === fromCurrency).mid /
+          rates.find(({ code }) => code === toCurrency).mid
         )
       ).toFixed(2)
     } {toCurrency}
