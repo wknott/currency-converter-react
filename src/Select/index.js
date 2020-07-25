@@ -1,12 +1,12 @@
 import React from "react";
 
-const Select = ({ value, setValue, exchangeRatesTable }) => (
+const Select = ({ value, setValue, options }) => (
   <select
     className="form__select"
     value={value}
     onChange={({ target }) => setValue(target.value)}
   >
-    {exchangeRatesTable.map(({ code, currency }) => <option key={code} value={code}>{currency}</option>)}
+    {options.map(({ value, label }) => <option key={value} value={value}>{label}</option>)}
   </select>
 )
 
