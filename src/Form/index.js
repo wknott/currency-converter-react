@@ -2,13 +2,16 @@ import React from "react";
 import "./styles.css";
 import Label from "../Label";
 import Select from "../Select";
-const getOptions = (exchangeRatesTable) => (
-  exchangeRatesTable.map(({ code, currency }) => ({
+import { rates } from "../rates";
+
+const ratesToOptions = () => (
+  rates.map(({ code, currency }) => ({
     value: code,
     label: currency,
   }))
 )
-const Form = ({ amount, setAmount, fromCurrency, setFromCurrency, toCurrency, setToCurrency, exchangeRatesTable }) => (
+
+const Form = ({ amount, setAmount, fromCurrency, setFromCurrency, toCurrency, setToCurrency }) => (
   <form className="form">
     <fieldset className="form__fieldset">
       <legend className="form__legend">Przelicznik</legend>
@@ -16,7 +19,7 @@ const Form = ({ amount, setAmount, fromCurrency, setFromCurrency, toCurrency, se
         <Select
           value={fromCurrency}
           setValue={setFromCurrency}
-          options={getOptions(exchangeRatesTable)}
+          options={ratesToOptions()}
         />
       </Label>
       <Label labelText="Kwota">
@@ -31,7 +34,7 @@ const Form = ({ amount, setAmount, fromCurrency, setFromCurrency, toCurrency, se
         <Select
           value={toCurrency}
           setValue={setToCurrency}
-          options={getOptions(exchangeRatesTable)}
+          options={ratesToOptions()}
         />
       </Label>
     </fieldset>
