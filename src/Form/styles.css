@@ -1,9 +1,5 @@
 .form__fieldset {
-  border: 2px solid hsl(226, 98%, 42%);
-  border-radius: 5px;
-  padding: 20px;
-  box-shadow: 0 0 5px 2px hsl(226, 98%, 52%);
-  background-color: #eee;
+  border: none;
 }
 
 .form__field,

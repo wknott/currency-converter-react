@@ -5,6 +5,7 @@
 
 .header__title {
   font-size: 30px;
+  margin-bottom: 0;
 }
 
 .header__date {
