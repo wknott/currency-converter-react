@@ -6,13 +6,6 @@
   background-color: #eee;
 }
 
-.form__legend {
-  background-color: #0234d2;
-  color: white;
-  border-radius: 5px;
-  padding: 10px;
-}
-
 .form__field,
 .form__select {
   border: 1px solid #0234d2;

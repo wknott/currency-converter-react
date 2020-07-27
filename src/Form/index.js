@@ -14,7 +14,6 @@ const ratesToOptions = () => (
 const Form = ({ amount, setAmount, fromCurrency, setFromCurrency, toCurrency, setToCurrency }) => (
   <form className="form">
     <fieldset className="form__fieldset">
-      <legend className="form__legend">Przelicznik</legend>
       <Label labelText="Pierwsza waluta">
         <Select
           value={fromCurrency}
