@@ -4,7 +4,7 @@ import { rates } from "../rates";
 
 const Result = ({ amount, fromCurrency, toCurrency }) => (
   <h2 className="result">
-    {amount} {fromCurrency} = {
+    {amount}&nbsp;{fromCurrency}&nbsp;= {
       (
         +amount *
         (
@@ -12,7 +12,7 @@ const Result = ({ amount, fromCurrency, toCurrency }) => (
           rates.find(({ code }) => code === toCurrency).mid
         )
       ).toFixed(2)
-    } {toCurrency}
+    }&nbsp;{toCurrency}
   </h2>
 )
 

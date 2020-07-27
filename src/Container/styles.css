@@ -8,3 +8,9 @@
   box-shadow: 0 0 5px 2px hsl(226, 98%, 52%);
   background-color: #eee;
 }
+
+@media (max-width: 767px) {
+  .container {
+    margin-top: 0;
+  }
+}
