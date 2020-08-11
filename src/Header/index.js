@@ -1,11 +1,11 @@
 import React from "react";
-import "./styles.css";
+import { StyledHeader, Title, Clock } from "./styled";
 
 const Header = ({ date }) => (
-  <header className="header">
-    <p className="header__date">Dzisiaj jest {date}</p>
-    <h1 className="header__title">Przelicznik walut</h1>
-  </header>
+  <StyledHeader>
+    <Clock>Dzisiaj jest {date}</Clock>
+    <Title>Przelicznik walut</Title>
+  </StyledHeader>
 )
 
 export default Header;
