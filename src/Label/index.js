@@ -1,12 +1,12 @@
 import React from "react";
-import "./styles.css";
+import { StyledLabel } from "./styled";
 
 const Label = ({ children, labelText }) => (
   <p>
-    <label className="label">
+    <StyledLabel>
       {labelText}:
       {children}
-    </label>
+    </StyledLabel>
   </p>
 )
 
