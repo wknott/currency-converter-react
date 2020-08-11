@@ -1,9 +1,9 @@
 import React from "react";
-import "./styles.css";
+import { StyledResult } from "./styled";
 import { rates } from "../rates";
 
 const Result = ({ amount, fromCurrency, toCurrency }) => (
-  <h2 className="result">
+  <StyledResult>
     {amount}&nbsp;{fromCurrency}&nbsp;= {
       (
         +amount *
@@ -13,7 +13,7 @@ const Result = ({ amount, fromCurrency, toCurrency }) => (
         )
       ).toFixed(2)
     }&nbsp;{toCurrency}
-  </h2>
+  </StyledResult>
 )
 
 export default Result;
