@@ -1,13 +1,13 @@
 import React from "react";
-
+import { StyledSelect } from "./styled";
 const Select = ({ value, setValue, options }) => (
-  <select
+  <StyledSelect
     className="form__select"
     value={value}
     onChange={({ target }) => setValue(target.value)}
   >
     {options.map(({ value, label }) => <option key={value} value={value}>{label}</option>)}
-  </select>
+  </StyledSelect>
 )
 
 export default Select

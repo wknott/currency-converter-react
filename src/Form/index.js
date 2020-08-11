@@ -2,7 +2,7 @@ import React from "react";
 import Label from "../Label";
 import Select from "../Select";
 import { rates } from "../rates";
-import "./styles.css";
+import { Fieldset, Field } from "./styled";
 
 const ratesToOptions = () => (
   rates.map(({ code, currency }) => ({
@@ -12,8 +12,8 @@ const ratesToOptions = () => (
 )
 
 const Form = ({ amount, setAmount, fromCurrency, setFromCurrency, toCurrency, setToCurrency }) => (
-  <form className="form">
-    <fieldset className="form__fieldset">
+  <form>
+    <Fieldset>
       <Label labelText="Pierwsza waluta">
         <Select
           value={fromCurrency}
@@ -22,8 +22,7 @@ const Form = ({ amount, setAmount, fromCurrency, setFromCurrency, toCurrency, se
         />
       </Label>
       <Label labelText="Kwota">
-        <input
-          className="form__field"
+        <Field
           type="number"
           value={amount}
           onChange={({ target }) => setAmount(target.value)}
@@ -36,7 +35,7 @@ const Form = ({ amount, setAmount, fromCurrency, setFromCurrency, toCurrency, se
           options={ratesToOptions()}
         />
       </Label>
-    </fieldset>
+    </Fieldset>
   </form>
 )
 
