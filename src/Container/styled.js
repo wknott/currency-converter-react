@@ -1,4 +1,6 @@
-.container {
+import styled from "styled-components";
+
+export const ContainerMain = styled.main`
   max-width: 800px;
   margin: 0 auto;
   margin-top: 100px;
@@ -7,10 +9,8 @@
   padding: 0 20px;
   box-shadow: 0 0 5px 2px hsl(226, 98%, 52%);
   background-color: #eee;
-}
 
-@media (max-width: 767px) {
-  .container {
+  @media(max-width: 767px){
     margin-top: 0;
   }
-}
+`;
