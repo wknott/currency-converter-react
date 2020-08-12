@@ -13,17 +13,5 @@ export const useCurrentDate = () => {
     }
   }, [])
 
-  const getDateString = (date) => (
-    date.toLocaleDateString("pl-PL",
-      {
-        weekday: "long",
-        day: "numeric",
-        month: "long",
-        hour: "numeric",
-        minute: "numeric",
-        second: "numeric"
-      }
-    )
-  )
-  return getDateString(date);
+  return date;
 }
