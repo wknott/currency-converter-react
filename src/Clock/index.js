@@ -3,7 +3,7 @@ import { StyledClock } from "./styled";
 import { useCurrentDate } from "./useCurrentDate";
 
 const getDateString = (date) => (
-  date.toLocaleDateString("pl-PL",
+  date.toLocaleDateString(undefined,
     {
       weekday: "long",
       day: "numeric",
