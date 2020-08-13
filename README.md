@@ -27,6 +27,7 @@ A simple application that allows you to convert currencies:
 - frank szwajcarski
 
 More currencies will be released in the future.
+Custom hook has been used to determine the current time and date.
 
 ## Screenshot
 
@@ -35,7 +36,7 @@ More currencies will be released in the future.
 ## Technologies
 
 - HTML
-- CSS (BEM Methodology)
+- CSS (Styled components)
 - JS (ES6+)
 - React
 
