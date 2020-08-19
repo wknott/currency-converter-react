@@ -5,6 +5,8 @@ import Form from "./Form";
 import Result from "./Result";
 import { rates } from "./rates";
 import Clock from "./Clock/";
+import { GlobalStyle } from "./GlobalStyle";
+
 function App() {
   const [amount, setAmount] = useState("100");
   const [fromCurrency, setFromCurrency] = useState(rates[0].code);
@@ -12,6 +14,7 @@ function App() {
 
   return (
     <Container>
+      <GlobalStyle />
       <Clock />
       <Header />
       <Form
