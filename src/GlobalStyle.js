@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import background from "./background.png";
 
 export const GlobalStyle = createGlobalStyle`
   html {
@@ -14,17 +15,15 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background-size: cover;
     background-position: center;
-    background-image: url("./background.png");
+    background-image: url(${background});
   }
 
   #root {
-    color: #222;
+    color: ${({ theme }) => theme.colors.text};
     font-family: "Lato", sans-serif;
   }
 
-  @media (max-width: 767px) {
-    #root {
-      padding: 20px 10px;
-    }
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    padding: 20px 10px;
   }
 `;

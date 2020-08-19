@@ -6,7 +6,7 @@ export const StyledLabel = styled.label`
   align-items: center;
   grid-gap: 10px;
   
-  @media (max-width: 600px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     grid-template-columns: 1fr;
   }
 `; 
