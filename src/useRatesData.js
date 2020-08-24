@@ -20,7 +20,7 @@ export const useRatesData = () => {
         setLoading(false);
       }
     }
-    setInterval(getData, 1000);
+    setTimeout(getData, 1000);
   }, []);
 
   return [rates, loading, date, error]
