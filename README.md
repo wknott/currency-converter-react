@@ -17,16 +17,7 @@
 
 ## Description
 
-A simple application that allows you to convert currencies:
-
-- złoty
-- euro
-- dolar amerykański
-- funt szterling
-- hrywna (Ukraina)
-- frank szwajcarski
-
-More currencies will be released in the future.
+A simple application that allows you to convert currencies downloaded from the European Central Bank.
 Custom hook has been used to determine the current time and date.
 
 ## Screenshot
@@ -35,12 +26,10 @@ Custom hook has been used to determine the current time and date.
 
 ## Technologies
 
-asdfasdf
-
 - HTML
 - CSS (Styled components)
 - JS (ES6+)
-- React
+- React (Custom Hooks)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
