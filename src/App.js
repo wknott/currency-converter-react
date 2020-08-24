@@ -4,6 +4,7 @@ import Header from "./Header";
 import Form from "./Form";
 import Result from "./Result";
 import Clock from "./Clock/";
+import Paragraph from "./Paragraph";
 import { GlobalStyle } from "./GlobalStyle";
 import { ThemeProvider } from "styled-components";
 import { defaultTheme } from "./theme";
@@ -34,6 +35,7 @@ function App() {
               setToCurrency={setToCurrency}
               rates={rates}
             />
+            <Paragraph date={date} />
             <Result
               amount={amount}
               fromCurrency={fromCurrency}
