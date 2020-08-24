@@ -5,21 +5,23 @@ export const useRatesData = () => {
   const [rates, setRates] = useState([]);
   const [loading, setLoading] = useState(true);
   const [date, setDate] = useState();
+  const [error, setError] = useState();
 
   useEffect(() => {
-    (async () => {
+    const getData = async () => {
       try {
         const response = await axios.get("https://api.exchangeratesapi.io/latest?base=PLN");
         const rates = Object.keys(response.data.rates).map(code => ({ code, rate: response.data.rates[code] }));
-        console.log(rates);
-        await setRates(rates);
-        await setLoading(false);
-        await setDate(response.data.date);
+        setRates(rates);
+        setDate(response.data.date);
       } catch (error) {
-        console.error(error)
+        setError(error);
+      } finally {
+        setLoading(false);
       }
-    })()
+    }
+    setInterval(getData, 1000);
   }, []);
 
-  return [rates, loading, date]
+  return [rates, loading, date, error]
 }
