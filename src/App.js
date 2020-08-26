@@ -14,7 +14,7 @@ function App() {
   const [amount, setAmount] = useState("100");
   const [fromCurrency, setFromCurrency] = useState("EUR");
   const [toCurrency, setToCurrency] = useState("PLN");
-  const [rates, loading, date, error] = useRatesData();
+  const { rates, loading, date, error } = useRatesData();
 
   return (
     <ThemeProvider theme={defaultTheme}>
