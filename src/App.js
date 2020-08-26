@@ -22,10 +22,12 @@ function App() {
         <GlobalStyle />
         <Clock />
         <Header />
-        {loading ?
+        {loading
+          ?
           <Message>Trwa wczytywanie walut...</Message>
           :
-          error ?
+          error
+            ?
             <Message error={true}>Wystąpił błąd, proszę spróbować później.</Message>
             :
             <>
