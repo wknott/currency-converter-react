@@ -4,7 +4,7 @@ import Header from "./Header";
 import Form from "./Form";
 import Result from "./Result";
 import Clock from "./Clock/";
-import Message from "./Message";
+import { Paragraph } from "./styled";
 import { GlobalStyle } from "./GlobalStyle";
 import { ThemeProvider } from "styled-components";
 import { defaultTheme } from "./theme";
@@ -12,7 +12,7 @@ import { useRatesData } from "./useRatesData";
 
 function App() {
   const [amount, setAmount] = useState("100");
-  const [fromCurrency, setFromCurrency] = useState("EUR");
+  const [fromCurrency, setFromCurrency] = useState("USD");
   const [toCurrency, setToCurrency] = useState("PLN");
   const { rates, loading, date, error } = useRatesData();
 
@@ -24,11 +24,11 @@ function App() {
         <Header />
         {loading
           ?
-          <Message>Trwa wczytywanie walut...</Message>
+          <Paragraph>Trwa wczytywanie walut...</Paragraph>
           :
           error
             ?
-            <Message error={true}>Wystąpił błąd, proszę spróbować później.</Message>
+            <Paragraph error={true}>Wystąpił błąd, proszę spróbować później.</Paragraph>
             :
             <>
               <Form
@@ -40,10 +40,10 @@ function App() {
                 setToCurrency={setToCurrency}
                 rates={rates}
               />
-              <Message>
+              <Paragraph>
                 Kursy walut pochodzą z Europejskiego Banku Centralnego.
                 Aktualne na dzień: <strong>{date}</strong>
-              </Message>
+              </Paragraph>
               <Result
                 amount={amount}
                 fromCurrency={fromCurrency}
