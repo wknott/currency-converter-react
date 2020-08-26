@@ -1,6 +1,6 @@
 import React from "react";
-import Label from "../Label";
-import Select from "../Select";
+import Label from "./Label";
+import Select from "./Select";
 import { Fieldset, Field } from "./styled";
 
 const Form = ({ amount, setAmount, fromCurrency, setFromCurrency, toCurrency, setToCurrency, rates }) => {

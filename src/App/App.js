@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import Container from "./Container";
-import Header from "./Header";
-import Form from "./Form";
-import Result from "./Result";
-import Clock from "./Clock/";
-import { Paragraph } from "./styled";
-import { GlobalStyle } from "./GlobalStyle";
 import { ThemeProvider } from "styled-components";
+import Clock from "./Clock";
+import Container from "./Container";
+import Form from "./Form";
+import Header from "./Header";
+import Result from "./Result";
+import { GlobalStyle } from "./GlobalStyle";
+import { Paragraph } from "./styled";
 import { defaultTheme } from "./theme";
 import { useRatesData } from "./useRatesData";
 
