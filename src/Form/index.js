@@ -4,12 +4,6 @@ import Select from "../Select";
 import { Fieldset, Field } from "./styled";
 
 const Form = ({ amount, setAmount, fromCurrency, setFromCurrency, toCurrency, setToCurrency, rates }) => {
-  const ratesToOptions = () => (
-    rates.map(({ code }) => ({
-      value: code,
-      label: code,
-    }))
-  )
 
   return (
     <form>
@@ -18,7 +12,7 @@ const Form = ({ amount, setAmount, fromCurrency, setFromCurrency, toCurrency, se
           <Select
             value={fromCurrency}
             setValue={setFromCurrency}
-            options={ratesToOptions()}
+            options={Object.keys(rates)}
           />
         </Label>
         <Label labelText="Kwota">
@@ -32,7 +26,7 @@ const Form = ({ amount, setAmount, fromCurrency, setFromCurrency, toCurrency, se
           <Select
             value={toCurrency}
             setValue={setToCurrency}
-            options={ratesToOptions()}
+            options={Object.keys(rates)}
           />
         </Label>
       </Fieldset>
